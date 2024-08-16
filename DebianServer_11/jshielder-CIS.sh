@@ -443,6 +443,7 @@ cp templates/pam/faillock.conf /etc/security/faillock.conf
 # 5.4.3: Ensure password reuse is limited.
 # 5.4.4: Ensure password hashing algorithm is up to date with the latest standards.
 cp templates/login.defs /etc/login.defs
+apt install libpam-cap libpam-krb5 libpam-sss
 cp templates/pam/common-password /etc/pam.d/common-password
 
 # 5.5.1.1: Ensure minimum days between password changes is configured.
